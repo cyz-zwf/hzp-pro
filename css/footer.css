@@ -1,0 +1,111 @@
+/*底部大盒子*/
+.bottom-box{
+    width:100%;
+    
+}
+.bottom{
+    width:1190px;
+    height:8.5rem;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+    border-bottom:2px solid #000;
+
+}
+.bottom ul li{
+    float: left;
+    margin:1.5rem 3rem;
+    text-align:4px;
+}
+/*图标*/
+.jlt,.jlt-1{
+    width:43px;
+    height:49px;
+    background:url(../img/footer/footer_ico_sprite.png) no-repeat;
+    background-position:-136px 2px;
+}
+.jlt-2{
+    background-position:-87px 1px;
+}
+.jlt-3{
+    background-position:8px 1px;
+}
+.jlt-4{
+    background-position:-45px 1px;
+}
+.jlt-5{
+    background-position:-185px 1px;
+}
+/*li之间添加 |  */
+.bottom ul li:not(:last-child)::after{
+    display:block;
+    margin-top:-55px;
+    margin-left:125px;
+    content:"|";
+    color:#a59d9d;
+}
+div.text-center{
+    margin:8px -20px;
+}
+p.text-center{
+    margin:8px -10px;
+}
+/*g购物流程 中部*/
+.bottom-m{
+    width:1190px;
+    margin:0 auto;
+    margin-top:20px;
+    margin-bottom:2rem;
+}
+/*解决高度坍塌*/
+.bottom-m::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+/*背景图*/
+.bottom-m ul li.bg-t{
+    width:64px;
+    height:154px;
+    background:url(../img/footer/footer_line.png);
+    background-size:100% 100%;
+    margin-right:0;
+    margin-left:128px;
+}
+.bottom-m ul li{
+    float:left;
+    margin-right:7.1rem;
+}
+.bottom-m ul li a{
+    display:block;
+    color:#a59d9d;
+    font-size: 12px;
+    margin-bottom:0.5rem;
+}
+.bottom-m ul li a.f-b{
+    font-weight:bold;
+    color:#000;
+    margin-bottom:1rem;
+}
+/*底部*/
+.bottom-b{
+    background:#000;
+    width:100%;
+    height:5rem;
+}
+.bottom-b-m{
+    width:1190px;
+    margin:0 auto;
+    text-align:center;
+}
+.bottom-b-m ul li.p-t{
+    padding-top: 1.5rem;
+}
+.bottom-b-m ul li a ,.bottom-b-m ul li span{
+    color:#a59d9d;
+    font-size:12px;
+    margin-right:8px;
+}
+.bottom-b-m ul li img{
+    vertical-align: middle;
+}
