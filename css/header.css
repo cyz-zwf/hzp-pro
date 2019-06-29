@@ -1,0 +1,42 @@
+/* 给顶部左边设置样式*/
+.top{
+    width:100%;
+    background-color:#000;
+    height:2rem;
+}
+/*顶部的左右ul去点*/
+.top div.lt ul,.rt ul{
+    list-style-type:none;
+}
+/*左右div浮动排一行*/
+.lt,.rt{
+    float:left;
+    width:50%;
+}
+/*给顶部左边li加浮动*/
+.top div.lt li{
+    float:left;
+    line-height: 2rem;
+}
+/*给顶部左边的a修改样式*/
+.top div.lt a,.top div.rt a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:3rem;
+    font-size:12px ;
+}
+/*给top rt 右浮动*/
+.top div.rt li{
+    float:right;
+    line-height: 2rem;
+    right:2rem;
+}
+.top div.rt ul li a{
+    margin-right:2rem;
+    margin-left:1rem;
+}
+/*顶部鼠标划过的颜色由白色变成红色*/
+.top div.lt a:hover,.top div.rt a:hover{
+    color:red;
+}
+
