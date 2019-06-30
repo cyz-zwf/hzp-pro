@@ -84,13 +84,16 @@ a{
     width:540px;
     height:34px;
     padding-left:20px;
+    position:relative;
     
 }
 .search-text button{
     width:4rem;
-    height:37px;
+    height:34px;
     background:#000;
     border:0px;
+    position:absolute;
+    
     
 }
 .search-text li a{
@@ -100,7 +103,7 @@ a{
 }
 /*右侧购物袋*/
 .fl-rt{
-    height:1.3rem;
+    height:42px;
     margin-right:2.5rem;
     margin-top:-2.5rem;
     border:1px solid #e8e8e8;
