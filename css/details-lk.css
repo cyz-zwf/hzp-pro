@@ -1,0 +1,33 @@
+.lk-box{
+    width:100%;   
+    border:1px solid #000;
+}
+/* 商品 */
+.lk{
+    width:1190px;
+    height: 400px;
+    margin:0 auto;
+    border:1px solid #000;
+}
+ /* 大图详情  */
+.lk-lt-dt img{
+    width:320px;
+    height:320px;
+}
+/* 小图详情  */
+.lk-lt-xt ul li{
+    float:left;
+    margin-left:20px;
+}
+/* 商品右侧 */
+.lk-rt{
+    width:830px;
+    height: 400px;
+    border:1px solid #000;
+}
+/* 商品标题 */
+.lk-rt-t{
+    width:650px;
+    
+    border:1px solid #000;
+}
