@@ -8,6 +8,11 @@
     height: 400px;
     margin:0 auto;
     border:1px solid #000;
+    position: relative;  
+}
+.lk-lt{
+    width:320px;
+    height:400px;  
 }
  /* 大图详情  */
 .lk-lt-dt img{
@@ -15,19 +20,28 @@
     height:320px;
 }
 /* 小图详情  */
+.lk-lt-xt{
+    position:absolute;
+    top:330px;
+}
 .lk-lt-xt ul li{
     float:left;
-    margin-left:20px;
+    margin-left:30px;
 }
 /* 商品右侧 */
 .lk-rt{
     width:830px;
     height: 400px;
     border:1px solid #000;
+    float:right;
+   margin-top:-401px;
 }
 /* 商品标题 */
 .lk-rt-t{
     width:650px;
-    
     border:1px solid #000;
+    
+}
+.lk-rt-rt{
+    
 }
