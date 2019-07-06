@@ -236,6 +236,81 @@
     background-position: -24px -15px;
     position:absolute;
     top:9px;
-    left:123px;
-    
+    left:123px;  
+}
+/* 商品基本信息  */
+.lk-msg{
+    width:100%;
+    border:1px solid #000;
+}
+.lk-msg-xq{
+    width:1190px;
+    margin:0 auto;
+    border:1px solid #000;
+}
+/* 浮动引起 解决高度坍塌 */
+.lk-msg-xq::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* 左侧猜您喜欢商品展示 */
+.lk-msg-xq-z{
+    width: 180px; 
+}
+.lk-b{
+    border-bottom:1px solid #000;
+    margin-top:10px;
+    padding:5px;
+}
+/* 商品展示区 */
+.lk-sp-zsq{
+    height:1000px;
+    border-right:1px solid #e8e8e8;
+    margin-top:30px;
+}
+/* 右侧基本信息详情 */
+.lk-msg-xq-y{
+    width:990px;
+    border:1px solid #ff0;
+    height:1000px;
+}
+/* 详情标题 */
+.lk-title{
+    margin-left:30px;
+    border-bottom:1px solid #000;
+}
+.lk-title ul li{
+    float:left;
+    margin-right:30px;
+    margin-top:10px;
+    padding:5px;
+}
+.lk-title ul li.lk-msg-b{
+    border-bottom:2px solid #000;
+}
+/* 解决li浮动带来的高度坍塌 */
+.lk-title:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* 详情内容 */
+.lk-msg-xq-y div.lk-msg-xinxi{
+    clear:both;
+    margin-top:20px;
+    border:1px solid #f0f;
+    margin-left:30px;
+}
+.lk-msg-xinxi ul li{
+    float:left;
+    width:230px;
+    margin-bottom:12px;
+    font-size:12px;
+}
+/* 解决li浮动带来的高度坍塌 */
+.lk-msg-xinxi::after{
+    content:"";
+    display:block;
+    clear:both;
 }
