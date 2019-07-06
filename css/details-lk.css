@@ -297,9 +297,7 @@
 }
 /* 详情内容 */
 .lk-msg-xq-y div.lk-msg-xinxi{
-    clear:both;
     margin-top:20px;
-    border:1px solid #f0f;
     margin-left:30px;
 }
 .lk-msg-xinxi ul li{
@@ -313,4 +311,13 @@
     content:"";
     display:block;
     clear:both;
+}
+/* 产品描述 */
+.lk-msg-xq-y div.lk-cp{
+    border:1px solid #f0f;
+    margin-top:30px;
+    margin-left:20px;
+}
+.lk-cp ul li{
+    margin-top:30px;
 }
