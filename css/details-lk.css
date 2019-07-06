@@ -273,7 +273,7 @@
 .lk-msg-xq-y{
     width:990px;
     border:1px solid #ff0;
-    height:1000px;
+    height:2500px;
 }
 /* 详情标题 */
 .lk-title{
@@ -313,11 +313,85 @@
     clear:both;
 }
 /* 产品描述 */
-.lk-msg-xq-y div.lk-cp{
-    border:1px solid #f0f;
-    margin-top:30px;
+.lk-cp{
     margin-left:20px;
+    position: relative;
 }
 .lk-cp ul li{
-    margin-top:30px;
+    margin-top:17px;
+    font-size:12px;
 }
+.lk-cp ul li.lk-cp-t{
+    font-size:15px;
+}
+.lk-cp-t div{
+    width:18px;
+    height:17px;
+    background:url(../img/details/PDP-ICON.png) no-repeat;
+    background-position:0px -68px;
+}
+/* 商品评论区  产品区*/
+.lk-sp-plq{
+    height:250px;
+    border-bottom:1px solid #ddd;
+    margin-top:50px;
+    
+}
+.lk-plq{
+    text-align: center;
+}
+.lk-sp-plq::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.font-24{
+    font-size:24px;
+}
+.font-17{
+    font-size:17px;
+    margin-top:10px;
+}
+.hx{
+    width:30px;
+    height:1px;
+    margin-left:479px;
+    margin-top:15px;
+    border-bottom:1px solid #000;
+    margin-bottom:20px;
+}
+.pos-re{
+    text-align:left;
+
+}
+.write{
+    width:45px;
+    height:45px;
+    background:url(../img/details/PDP-ICON2.png);
+    background-position:-40px -105px;
+    margin-left:350px;
+}
+.font-21{
+    font-size:21px;
+    color:#999;
+    padding-top:11px;
+    padding-left:415px;
+}
+/* 产品咨询区 */
+.quest{
+    width:40px;
+    height:45px;
+    background:url(../img/details/PDP-ICON2.png);
+    background-position:0px -105px;
+    margin-left:350px;
+}
+.call{
+    width:126px;
+    height:40px;
+    background-color:#EE0000;
+    color:#fff;
+    text-align:center;
+    line-height:40px;
+    margin-top:-30px;
+}
+/* 支付及配送 */
