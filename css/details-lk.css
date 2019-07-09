@@ -395,3 +395,44 @@
     margin-top:-30px;
 }
 /* 支付及配送 */
+.lk-msg div.height-300{
+    height:390px;
+}
+.zf{
+    margin-top:100px;
+}
+.zf p{
+    margin-bottom:5px;
+    margin-left:20px;
+    font-size:14px;
+    color:#333;
+}
+.zf p.font-b{
+    color:#000;
+    font-weight:bold;
+}
+.zf p.mar-b{
+    margin-bottom:18px;
+}
+.zf p.mar-5{
+    display:block;
+    margin-left:50px;
+    margin-bottom:27px;
+}
+/* 价格声明 */
+.jg p{
+    color:#333;
+    margin-top:61px;
+    margin-left:20px;
+    font-size:14px;
+}
+/* 退换货规定 */
+.thh{
+    margin-top:76px;
+    margin-left:20px;
+}
+.thh p{
+    color:#333;
+    font-size:14px;
+    margin-bottom:11px;
+}
