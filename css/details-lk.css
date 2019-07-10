@@ -241,12 +241,10 @@
 /* 商品基本信息  */
 .lk-msg{
     width:100%;
-    border:1px solid #000;
 }
 .lk-msg-xq{
     width:1190px;
     margin:0 auto;
-    border:1px solid #000;
 }
 /* 浮动引起 解决高度坍塌 */
 .lk-msg-xq::after{
@@ -265,14 +263,39 @@
 }
 /* 商品展示区 */
 .lk-sp-zsq{
-    height:1000px;
+    height:2000px;
     border-right:1px solid #e8e8e8;
     margin-top:30px;
+}
+.lk-zsq-1{
+    width:179px;
+    height:252px;
+    margin-top:40px;
+    text-align:center;
+    padding-right:20px;
+}
+.lk-zsq-1 img{
+    width:160px;
+    height:160px;
+}
+.lk-zsq-1 div.lk_title{
+    font-size:14px;
+    font-weight: bold;
+}
+.lk-zsq-1 div.mb{
+    width:15px;
+    height:1px;
+    border-bottom:1px solid #666;
+    margin:5px 0 5px 80px;
+    cursor: pointer;
+}
+.lk-zsq-1 p.font-12{
+    font-size:13px;
+    margin-bottom:9px;
 }
 /* 右侧基本信息详情 */
 .lk-msg-xq-y{
     width:990px;
-    border:1px solid #ff0;
     height:2500px;
 }
 /* 详情标题 */
