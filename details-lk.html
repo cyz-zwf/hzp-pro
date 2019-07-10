@@ -72,13 +72,13 @@
                             <p class="font_small color-6">规格 <span>套装</span></p>
                         </div>
                         <div class="lk-sp-ge-m">
-                            <input type="text" placeholder="1">
-                            <!-- 上图标按钮 -->
-                            <div class="lk-sp-ge-ms">
+                            <input type="text" placeholder="1" id="anniu-in">
+                            <!-- 下图标按钮 -->
+                            <div class="lk-sp-ge-ms" id="anniu-dowen">
                                 <div class="anniu-s"></div>
                             </div>
                             <!-- 下图标按钮 -->
-                            <div class="lk-sp-ge-mx">
+                            <div class="lk-sp-ge-mx" id="anniu-up">
                                 <div class="anniu-x"></div>
                             </div>
                         </div>
@@ -265,6 +265,18 @@
         </div>
 
     </div>
+    <script>
+        //商品规格  规格图标按钮
+        // 获取商品规格中上图标的按钮进行绑定事件
+        //获取
+        var btn=document.getElementById("anniu-up");
+        //绑定
+        btn.onclick=function () {
+             //获取input
+             var input_up=document.getElementById("anniu-in");
+             
+         }
+    </script>
 </body>
 
 </html>
