@@ -72,13 +72,13 @@
                             <p class="font_small color-6">规格 <span>套装</span></p>
                         </div>
                         <div class="lk-sp-ge-m">
-                            <input type="text" placeholder="1" id="anniu-in">
+                            <input type="text"  value="1" >
                             <!-- 下图标按钮 -->
-                            <div class="lk-sp-ge-ms" id="anniu-dowen">
+                            <div class="lk-sp-ge-ms" data-tb1="tb1" >
                                 <div class="anniu-s"></div>
                             </div>
-                            <!-- 下图标按钮 -->
-                            <div class="lk-sp-ge-mx" id="anniu-up">
+                            <!-- 上图标按钮 -->
+                            <div class="lk-sp-ge-mx" data-tb2="tb2">
                                 <div class="anniu-x"></div>
                             </div>
                         </div>
@@ -267,15 +267,26 @@
     </div>
     <script>
         //商品规格  规格图标按钮
-        // 获取商品规格中上图标的按钮进行绑定事件
-        //获取
-        var btn=document.getElementById("anniu-up");
-        //绑定
-        btn.onclick=function () {
-             //获取input
-             var input_up=document.getElementById("anniu-in");
-             
-         }
+        // 查找商品规格中上图标的按钮
+        var anniu_up=document.querySelector("div[data-tb2=tb2]");
+        var anniu_down=document.querySelector("div[data-tb1=tb1]");
+        //绑定事件处理函数
+        //查找要修改的元素
+        //修改
+        anniu_up.onclick=function(){
+            var input_v=document.querySelector("div.lk-sp-ge-m input");
+            Number(input_v.value);
+            input_v.value++;
+        }
+        anniu_down.onclick=function(){
+            var input_v=document.querySelector("div.lk-sp-ge-m input");
+            var n=Number(input_v.value);
+            if(n<=1){
+                input_v.value=1;
+            }else{
+                input_v.value--;
+            }
+        }
     </script>
 </body>
 
