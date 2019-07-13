@@ -96,11 +96,49 @@ h2 span{
     width:590px;
 }
 /* 品牌商家 */
+.std-1 ul::after{
+    content:"";
+    display: block;
+    clear:both;
+}
  .std-1 ul li {
      width:148px;
      height:78px;
      border:1px solid #e8e8e8;
      float:left; 
+}
+.std-1 ul li:hover{
+    width:148px;
+    height:78px;
+    background-color:rgba(0,0,0,.8);
+    float:left;   
+}
+.std-1 ul li div.sdts{
+    width:147px;
+    height:78px; 
+    text-align:center;
+    position: relative;
+    top:-65px;
+    display: none;
+}
+.std-1 ul li:hover div.sdts{
+    display: inline-block;
+}
+.std-1 ul li:hover div.sdts p{
+    margin-top:15px;
+    color:#fff;
+    font-size:14px;
+}
+.std-1 ul li:hover div.djck{
+    color:#fff;
+    width:80px;
+    height:20px;
+    margin:0 auto;
+    background-color:#EE0000;
+    border-radius:30px;
+    line-height:20px;
+    font-size:14px;
+    margin-top:10px;
 }
 /* f2图片展示区 */
 .f2-box{
