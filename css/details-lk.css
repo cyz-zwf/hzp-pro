@@ -153,6 +153,26 @@
     position:absolute;
     bottom:27px;
     right:9px;
+    display:block;
+}
+.cuxtub-1{
+    width:10px;
+    height:6px;
+    background:url(../img/details/PDP-ICON.png) no-repeat;
+    background-position: -50px -18px;
+    position:absolute;
+    bottom:29px;
+    right:10px;
+    display:none;
+}
+.cux1{
+    width:521px;
+    height:240px;
+    border:1px solid #000; 
+    position:absolute;
+    left:303px;
+    top:38px;
+    display:none;
 }
 /* 商品规格 */
 
@@ -416,6 +436,11 @@
     text-align:center;
     line-height:40px;
     margin-top:-30px;
+}
+/* 我要咨询 */
+.call:hover{
+    background-color:#000;
+    cursor: pointer;
 }
 /* 支付及配送 */
 .lk-msg div.height-300{

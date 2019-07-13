@@ -62,9 +62,12 @@
                             <p class="color-6">活动</p>
                             <p><span>满赠</span>"购买官网任意产品，即可获赠体验装一份 （赠品随机发送，数量有限，赠完即止） "</p>
                         </div>
-                        <div class="lk-rt-mm-rt rt font_small">促销详情</div>
-                        <!-- 促销详情的小图片 -->
-                        <div class="cuxtub"></div>
+                        <div class="lk-rt-mm-rt rt font_small">促销详情
+                            <!-- 促销详情的小图片 -->
+                            <div class="cuxtub" data-tub="tub"></div>
+                            <div class="cuxtub-1" data-tub="tub-1"></div>
+                        </div>
+                        <div class="cux1" data-cux="cux1"></div>
                     </div>
                     <!-- 商品规格 -->
                     <div class="lk-sp-ge">
@@ -72,9 +75,9 @@
                             <p class="font_small color-6">规格 <span>套装</span></p>
                         </div>
                         <div class="lk-sp-ge-m">
-                            <input type="text"  value="1" >
+                            <input type="text" value="1">
                             <!-- 下图标按钮 -->
-                            <div class="lk-sp-ge-ms" data-tb1="tb1" >
+                            <div class="lk-sp-ge-ms" data-tb1="tb1">
                                 <div class="anniu-s"></div>
                             </div>
                             <!-- 上图标按钮 -->
@@ -266,27 +269,50 @@
 
     </div>
     <script>
-        //商品规格  规格图标按钮
-        // 查找商品规格中上图标的按钮
-        var anniu_up=document.querySelector("div[data-tb2=tb2]");
-        var anniu_down=document.querySelector("div[data-tb1=tb1]");
-        //绑定事件处理函数
-        //查找要修改的元素
-        //修改
-        anniu_up.onclick=function(){
-            var input_v=document.querySelector("div.lk-sp-ge-m input");
-            Number(input_v.value);
-            input_v.value++;
-        }
-        anniu_down.onclick=function(){
-            var input_v=document.querySelector("div.lk-sp-ge-m input");
-            var n=Number(input_v.value);
-            if(n<=1){
-                input_v.value=1;
-            }else{
-                input_v.value--;
+        (function () {
+            //商品规格  规格图标按钮
+            // 查找商品规格中上图标的按钮
+            var anniu_up = document.querySelector("div[data-tb2=tb2]");
+            var anniu_down = document.querySelector("div[data-tb1=tb1]");
+            //绑定事件处理函数
+            //查找要修改的元素
+            //修改
+            anniu_up.onclick = function () {
+                var input_v = document.querySelector("div.lk-sp-ge-m input");
+                Number(input_v.value);
+                input_v.value++;
             }
-        }
+            anniu_down.onclick = function () {
+                var input_v = document.querySelector("div.lk-sp-ge-m input");
+                var n = Number(input_v.value);
+                if (n <= 1) {
+                    input_v.value = 1;
+                } else {
+                    input_v.value--;
+                }
+            }
+        })();
+        (function () {
+            // 点击时显示
+            var cux = document.querySelector("div.lk-rt-mm div.lk-rt-mm-rt");
+            var tub = cux.firstElementChild ;
+            var style_tub = getComputedStyle(tub);
+            var tub_1 = tub.nextElementSibling ;
+            var style_tub_1 = getComputedStyle(tub_1);
+            var cux1 = document.querySelector("div.lk-rt-mm div[data-cux=cux1]");
+            var style = getComputedStyle(cux1);
+            cux.onclick = function () {
+                if (cux1.style.display == "block") {
+                    cux1.style.display = "none";
+                    tub.style.display = "block";
+                    tub_1.style.display="none";
+                } else {
+                    cux1.style.display = "block"
+                    tub.style.display = "none";
+                    tub_1.style.display="block";
+                }
+            }
+        })();
     </script>
 </body>
 
