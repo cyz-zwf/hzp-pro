@@ -68,7 +68,7 @@
     height:73px;
     padding-top:2px;
     padding-left:5px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8; 
 }
 .lk-rt-lt p.font-20{
     font-size:20px;
@@ -220,6 +220,7 @@
     position:absolute;
     bottom:4px;
     left:6px;
+    opacity:0.5;
 }
 /* 下图标按钮背景图片定位 */
 .lk-sp-ge-m div.anniu-x{
@@ -241,6 +242,9 @@
     width:175px;
     height:40px;
     background-color:#ff0000;
+}
+.lk-spcar-b:hover{
+    background-color:#000;
 }
 .lk-spcar-b p{
     color:#fff;
@@ -293,6 +297,7 @@
     margin-top:40px;
     text-align:center;
     padding-right:20px;
+    cursor:pointer;
 }
 .lk-zsq-1 img{
     width:160px;
@@ -312,6 +317,9 @@
 .lk-zsq-1 p.font-12{
     font-size:13px;
     margin-bottom:9px;
+}
+.lk-zsq-1 p.font-12:hover{
+    color:#EE0000
 }
 /* 右侧基本信息详情 */
 .lk-msg-xq-y{

@@ -274,30 +274,38 @@
             // 查找商品规格中上图标的按钮
             var anniu_up = document.querySelector("div[data-tb2=tb2]");
             var anniu_down = document.querySelector("div[data-tb1=tb1]");
+            var anniu_s=anniu_down.firstElementChild;
+            var style=getComputedStyle(anniu_s);
             //绑定事件处理函数
             //查找要修改的元素
             //修改
             anniu_up.onclick = function () {
                 var input_v = document.querySelector("div.lk-sp-ge-m input");
-                Number(input_v.value);
+                var n=Number(input_v.value);
                 input_v.value++;
+                if(n>=1){
+                    anniu_s.style.opacity=1;
+                }
             }
             anniu_down.onclick = function () {
                 var input_v = document.querySelector("div.lk-sp-ge-m input");
                 var n = Number(input_v.value);
                 if (n <= 1) {
-                    input_v.value = 1;
+                    input_v.value = 1;    
                 } else {
                     input_v.value--;
+                }
+                if(input_v.value == 1){
+                    anniu_s.style.opacity=0.5;
                 }
             }
         })();
         (function () {
             // 点击时显示
             var cux = document.querySelector("div.lk-rt-mm div.lk-rt-mm-rt");
-            var tub = cux.firstElementChild ;
+            var tub = cux.firstElementChild;
             var style_tub = getComputedStyle(tub);
-            var tub_1 = tub.nextElementSibling ;
+            var tub_1 = tub.nextElementSibling;
             var style_tub_1 = getComputedStyle(tub_1);
             var cux1 = document.querySelector("div.lk-rt-mm div[data-cux=cux1]");
             var style = getComputedStyle(cux1);
@@ -305,11 +313,11 @@
                 if (cux1.style.display == "block") {
                     cux1.style.display = "none";
                     tub.style.display = "block";
-                    tub_1.style.display="none";
+                    tub_1.style.display = "none";
                 } else {
                     cux1.style.display = "block"
                     tub.style.display = "none";
-                    tub_1.style.display="block";
+                    tub_1.style.display = "block";
                 }
             }
         })();
