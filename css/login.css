@@ -16,8 +16,30 @@
     height:610px;
     background: transparent no-repeat scroll 50% 0;
     background-image:url("../img/login/hp_loginlage_20190620.jpg");
+    position : relative;
     
 }
 .lo_box{
+    width:360px;
+    height:380px;
+    background-color:#fff;
+    position:absolute;
+    right:20%;
+    top:115px;
+    padding:0px 30px;
+}
+.lo_box div.dl{
+    margin-top:26px;
+    margin-bottom:34px;
+}
 
+.lo_box input{
+    width:298px;
+    height:30px;
+    margin-bottom :19px;
+    padding-left:20px;
+}
+.lo_box input:hover{
+    color: initial;
+    border:1px solid #444;
 }
