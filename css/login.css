@@ -3,6 +3,7 @@
     height:920px;
     
 }
+/* logo */
 .logo{
     width:1190px;
     height:89px;
@@ -12,6 +13,7 @@
     text-shadow: 2px 2px #999;
     font-style:italic;
 }
+/* 登录 */
 .bodbg{
     min-width: 1190px;
     width: 100%;
@@ -21,6 +23,7 @@
     position : relative;
     
 }
+/* 登录盒子 */
 .lo_box{
     width:360px;
     height:380px;
@@ -30,11 +33,12 @@
     top:115px;
     padding:0px 30px;
 }
+/* 登录官网 */
 .lo_box div.dl{
     margin-top:26px;
     margin-bottom:34px;
 }
-
+/* 手机和密码文本框 */
 .lo_box input{
     width:298px;
     height:30px;
@@ -42,9 +46,23 @@
     padding-left:20px;
 }
 .lo_box input:hover{
-    color: initial;
-    border:1px solid #444;
+    border:0;
+    border:1px solid #919191;
+    border-bottom:1px solid #444;
 }
+.lo_box div.text{
+    position:relative;
+    
+}
+.lo_box div.tex span{
+    width:20px;
+    height:30px;
+    background:url("../img/login/LoginIn-icon.png") no-repeat;
+    background-position :0px 0px;
+    border:1px solid #919191;
+    
+}
+/* 忘记密码 */
 .lo_box div.pwd{
     color:#666;
     margin-bottom:20px;
@@ -53,6 +71,7 @@
     color:#e00;
     cursor: pointer;
 }
+/* 登录按钮 */
 .lo_box button.btn_dl{
     width:300px;
     height:40px;
@@ -61,9 +80,11 @@
     border:0;
     font-size:18px;
 }
+/* 多选按钮 */
 div.chb{
     margin-top:4px;
 }
+/* 清除父元素的高度坍塌 */
 div.chb::after{
     content:"";
     display:block;
@@ -87,32 +108,49 @@ div.chb :last-child {
     color:#000;
     cursor:pointer;
 }
+/* 其他登录小图标 */
 div.image ul>li{
     float:left;
-    margin-left:5px;
+    margin-left:10px;
 }
+/* 微信小图标 */
 div.image ul>li:first-child{
     width:24px;
     height:24px;
     background:url("../img/login/LoginIn-icon.png");
     background-position :48px 0px;
 }
+div.image ul>li:first-child:hover{
+    background-position :128px 0px;
+    cursor:pointer;
+} 
+/* 新浪小图标 */
 div.image ul>li:nth-child(2){
     width:24px;
     height:24px;
     background:url("../img/login/LoginIn-icon.png");
     background-position :48px 24px;
 }
+div.image ul>li:nth-child(2):hover{
+    background-position :128px 24px;
+    cursor:pointer;
+}
+/* qq小图标 */
 div.image ul>li:last-child{
     width:24px;
     height:24px;
     background:url("../img/login/LoginIn-icon.png");
     background-position :48px 48px;
 }
+div.image ul>li:last-child:hover{
+    background-position :128px 48px;
+    cursor:pointer;
+}
 div.zc{
    float:right;
    font-size:12px;
 }
+/* 免费注册 */
 div.zc span{
     color:#e00;
     margin-left:5px;
