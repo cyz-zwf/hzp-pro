@@ -35,37 +35,46 @@
 }
 /* 登录官网 */
 .lo_box div.dl{
-    margin-top:26px;
+    margin-top:30px;
     margin-bottom:34px;
 }
 /* 手机和密码文本框 */
 .lo_box input{
     width:298px;
     height:30px;
-    margin-bottom :19px;
-    padding-left:20px;
+    padding-left:25px;
 }
 .lo_box input:hover{
     border:0;
     border:1px solid #919191;
     border-bottom:1px solid #444;
 }
-.lo_box div.text{
+div.lo_box :nth-child(2){
     position:relative;
-    
 }
-.lo_box div.tex span{
+span.suo1{
+    display:block;
+    width:20px;
+    height:19px;
+    background:url("../img/login/LoginIn-icon.png") no-repeat;
+    background-position :0px -20px;
+    top:-26px;
+    left:2px;
+}
+span.suo{
+    display:block;
     width:20px;
     height:30px;
     background:url("../img/login/LoginIn-icon.png") no-repeat;
-    background-position :0px 0px;
-    border:1px solid #919191;
-    
+    background-position :0px 10px;
+    top:-35px;
+    left:2px;
 }
 /* 忘记密码 */
 .lo_box div.pwd{
     color:#666;
     margin-bottom:20px;
+    margin-top:-13px;
 }
 .lo_box div.pwd:hover{
     color:#e00;
@@ -82,7 +91,7 @@
 }
 /* 多选按钮 */
 div.chb{
-    margin-top:4px;
+    margin-top:6px;
 }
 /* 清除父元素的高度坍塌 */
 div.chb::after{
@@ -112,6 +121,7 @@ div.chb :last-child {
 div.image ul>li{
     float:left;
     margin-left:10px;
+    margin-top:20px;
 }
 /* 微信小图标 */
 div.image ul>li:first-child{
@@ -149,6 +159,7 @@ div.image ul>li:last-child:hover{
 div.zc{
    float:right;
    font-size:12px;
+   margin-top:20px;
 }
 /* 免费注册 */
 div.zc span{
