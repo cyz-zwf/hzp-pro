@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header id="header"></header>
+    <div id="header"></div>
     <!-- 大轮播图+导航 -->
     <div class="lb-box">
         <div class="z-box">
@@ -287,8 +287,31 @@
     <div>
         <div>sdkj</div>
     </div>
-    <footer id="footer"></footer>
+     <!-- 页面滚动效果 -->
+     <div id="FixedTop"  >
+            <div class="FTop">
+                <div class="Ftop_logo">C y z & Z h u</div>
+                <div class="Ftop_box">
+                    <div class="text"><input type="text"></div>
+                    <div class="search">搜索</div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+    <div id="footer"></div>
+   
 <script>
+    // 页面滚动的效果
+    window.onscroll=function (){
+        var scrollTop=document.documentElement.scrollTop ||document.body.scrollTop;
+        if(scrollTop>=500){
+            FixedTop.className="show"
+        }else{
+            FixedTop.className=""
+        }
+    }
+
    /* (function (){
         var lis=document.querySelectorAll("div.std-1 ul li");
        //console.log(lis); 

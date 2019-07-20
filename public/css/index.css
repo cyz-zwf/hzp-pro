@@ -230,3 +230,63 @@ a.zsq-dt img{
     -webkit-animation-name: flipOutY;
     animation-name: flipOutY;
 }
+
+/* 页面滚动效果 */
+#FixedTop{
+    width:100%;
+    height:0px;
+    background-color:#fff;
+    box-shadow: 1px 1px 5px #f5f5f5;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height .5s linear;
+}
+#FixedTop.show{
+    height:60px;
+    opacity: 1;
+    transition: height .5s linear;
+
+}
+
+#FixedTop div.FTop{
+    width:1190px;
+    margin:0 auto;
+}
+#FixedTop div.FTop::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+#FixedTop div.Ftop_logo{
+    font-size:39px;
+    text-shadow: 2px 2px #999;
+    font-style:italic;
+    float:left;
+    line-height:60px;
+    margin-right:116px;
+    margin-left: 124px;
+}
+#FixedTop div.Ftop_box{
+    position: relative;
+}
+#FixedTop div.Ftop_box div.text{
+    padding-top:13px;
+}
+#FixedTop div.Ftop_box input{
+    width:540px;
+    height:36px;
+    float:left;
+}
+#FixedTop div.Ftop_box div.search{
+    border:1px solid #000;
+    width:90px;
+    height:36px;
+    background-color:#000;
+    color:#fff;
+    position: absolute;
+    right:95px;
+    text-align:center;
+    line-height:36px;
+}
