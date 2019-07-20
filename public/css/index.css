@@ -17,26 +17,26 @@ body{
     background:url(../img/index/hp_longwearing_20190627.gif);
 }
 /* 导航box */
-.nav{
+div.lb div.nav{
     position: absolute;
     background-color:#fff;
     z-index:3;
 }
 /* 导航下的列表 */
-.nav ul li{
+div.lb div.nav ul li{
     width:240px;
     border-bottom:1px solid #f5f5f5;
     padding:11px 0px 8px 15px;
 }
 /* 导航下的标题 */
-.nav ul li a.dis-b{
+div.lb div.nav ul li a.dis-b{
     display:block;
     font-weight:bold;
     color:#000;
     margin-bottom:2px;
 }
 /* 导航字体 */
-.nav ul li a{
+div.lb div.nav ul li a{
     font-size:12px;
     color:#666;
 }
