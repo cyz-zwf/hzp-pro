@@ -167,3 +167,25 @@ div.zc span{
     margin-left:5px;
     cursor: pointer;
 }
+/*底部*/
+#login div.bottom-b{
+    background:#000;
+    width:100%;
+    height:5rem;
+}
+#login div.bottom-b-m{
+    width:1190px;
+    margin:0 auto;
+    text-align:center;
+}
+#login div.bottom-b-m ul li.p-t{
+    padding-top: 1.5rem;
+}
+#login div.bottom-b-m ul li a ,.bottom-b-m ul li span{
+    color:#a59d9d;
+    font-size:12px;
+    margin-right:8px;
+}
+#login div.bottom-b-m ul li img{
+    vertical-align: middle;
+}
