@@ -297,22 +297,99 @@
                 </div>
             </div>
         </div>
-        <div></div>
+        <!-- 右边滑动效果 -->
+        <div id="FixedRight">
+            <ul>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">个人信息</em>
+                    <em class="script_1"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">购物车</em>
+                    <em class="script_2"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">联系客服</em>
+                    <em class="script_3"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">移动端</em>
+                    <em class="script_4"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">返回顶部</em>
+                    <em class="script_5"></em>
+                </li>
+            </ul>
+        </div>
         <div></div>
     <div id="footer"></div>
     <script src="js/jquery-3.2.1.js"></script>
 <script>
-    // 页面滚动的效果
+    // 页面滚动的效果  // 右边边滚动效果
     window.onscroll=function (){
         var scrollTop=document.documentElement.scrollTop ||document.body.scrollTop;
         if(scrollTop>=500){
-            FixedTop.className="show"
+            FixedTop.className="show";
+            FixedRight.className="show";
         }else{
-            FixedTop.className=""
+            FixedTop.className="";
+            FixedRight.className="";
         }
     }
-    // 左边滚动效果
+    // 右边边滚动效果
+    // 原生
+   /*  var lis=document.querySelectorAll("#FixedRight ul li");
+    for(var li of lis){
+        li.onmouseenter=function(){
+            var li=this;
+            var em=li.lastElementChild.previousElementSibling;
+            var style=getComputedStyle(em);
+            console.log(style )
+            // if(em.style.opacity==0){
+                em.style.opacity=1;
+            // }else{
+            //     em.style.opacity=0;
+            // }        
+        }
+        li.onmouseleave=function(){
+            var li=this;
+            var em=li.lastElementChild.previousElementSibling;
+            var style=getComputedStyle(em);
+            em.style.opacity=0;
+        }
+    }*/
+
+
+// jq 右边边滚动效果
+$("#FixedRight ul li").hover(function(){
+    var $li = $(this);
+    var $em = $li.children(":last-child").prev();
+    if($em.css("opacity") == 0){
+        $em.css("opacity",1);
+    }else{
+        $em.css("opacity",0);
+    }
     
+})
+/*
+ $("#FixedRight ul li").each(function(i ,elem){
+      var $li=elem;
+      console.log($li);
+      //return;
+      $li.hover(function(){
+          console.log(11)
+          //var $li=this;
+          //var $em=$li.children(":last-child").prev();
+          //console.log($em)
+      })
+  })*/
+
 
    /* (function (){
         var lis=document.querySelectorAll("div.std-1 ul li");
