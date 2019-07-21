@@ -1,0 +1,99 @@
+#shp_box{
+    width:100%;
+    height:120px;
+}
+#shp_box div#shp{
+    width:1190px;
+    margin:0 auto;
+    padding:25px 0px;
+}
+#shp_box div#shp div.lo{
+    width:300px;
+    font-size:39px;
+    height:50px;
+    line-height:50px;
+    text-shadow: 2px 2px #999;
+    font-style:italic;
+    float:left;
+}
+/* 购物车流程 */
+#shp_box div#shp div.shp_lc{
+    width:500px;
+    height:59px;
+    float:right;
+    border-bottom: 3px solid #aaa;
+}
+#shp_box div#shp div.shp_lc div{
+    background:url(../img/shp/checkout_header_step.png) no-repeat;
+    width:82px;
+    height:59px;
+    background-position:-23px 3px;
+    float:left;
+    margin-right:50px;
+}
+#shp_box div#shp div.shp_lc :first-child{
+    border-bottom:3px solid #000;
+}
+#shp_box div#shp div.shp_lc :nth-child(2){
+    width:125px;
+    height:59px;
+    background-position:-124px -49px;
+    /* border-bottom:3px solid #000; */
+}
+#shp_box div#shp div.shp_lc :last-child{
+    width:125px;
+    height:60px;
+    background-position:-124px -100px;
+}
+#shp_box div#shp :after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* 购物筐 */
+div.shpbox_bg{
+    width:100%;
+    background-color:#e8e8e8;
+    padding:35px;
+}
+/* 消息提示 */
+div.shpbox_bg div.mag {
+    width:1190px;
+    margin:0 auto;
+    height:40px;
+    background-color:#fff;
+    line-height:40px;
+    padding-left:15px;
+    font-size:12px;
+}
+/* 购物清单 */
+div.shpbox_bg div.shp_list{
+    width:1190px;
+    background-color:#fff;
+    margin:0 auto;
+    margin-top:30px;
+}
+div.shp_list div.shp_title ul{
+    border-bottom:1px solid #e8e8e8;
+}
+div.shp_list div.shp_title ul li{
+    float:left;
+    margin-right:90px;
+    height:47px;
+    line-height: 47px;
+    margin-left:15px;
+    font-size: 12px;
+} 
+div.shp_list div.shp_title ul :nth-child(2){
+    margin-right:400px;
+}
+div.shp_list div.shp_title ::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+/* 购物车商品1 */
+div.shp_list div.shp_title div.shp_sp{
+    width:1190px;
+    height:150px;
+}
