@@ -1,9 +1,9 @@
 //请求header.html
 $(function () {
     $.ajax({
-        url:"top.html",
-        type:"get",
-        success:function (result){
+        url: "top.html",
+        type: "get",
+        success: function (result) {
             $(result).replaceAll("#top");
             $(`<link rel="stylesheet" href="css/top.css">`)
         }
@@ -30,4 +30,15 @@ $(function () {
             $(`<link rel="stylesheet" href="css/footer.css">`).appendTo("head");
         }
     });
+})
+//请求Fixed_nav.html
+$(function () {
+    $.ajax({
+        url: "Fixed_nav.html",
+        type: "get",
+        success: function (result) {
+            $(result).replaceAll("#FixedRight");
+            $(`<link rel="stylesheet" href="css/Fixed_nav.css">`)
+        }
+    })
 })

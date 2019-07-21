@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Fixed_nav.css">
+    <link rel="stylesheet" href="css/comm.css">
+</head>
+
+<body >
+    <div id="FixedRight">
+        <ul>
+            <li>
+                <a href=""></a>
+                <em class="xs">个人信息</em>
+                <em class="script_1"></em>
+            </li>
+            <li>
+                <a href=""></a>
+                <em class="xs">购物车</em>
+                <em class="script_2"></em>
+            </li>
+            <li>
+                <a href=""></a>
+                <em class="xs">联系客服</em>
+                <em class="script_3"></em>
+            </li>
+            <li>
+                <a href=""></a>
+                <em class="xs">移动端</em>
+                <em class="script_4"></em>
+            </li>
+            <li>
+                <a href=""></a>
+                <em class="xs">返回顶部</em>
+                <em class="script_5"></em>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script>
+        window.onscroll = function () {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrollTop >= 500) {
+                FixedRight.className = "show";
+                FixedTop.className = "show";
+
+            } else {
+                FixedRight.className = "";
+                FixedTop.className = "";
+
+            }
+        }
+        // jq 右边边滚动效果
+        $("#FixedRight ul li").hover(function () {
+            var $li = $(this);
+            var $em = $li.children(":last-child").prev();
+            if ($em.css("opacity") == 0) {
+                $em.css("opacity", 1);
+            } else {
+                $em.css("opacity", 0);
+            }
+        })
+        // 右边边滚动效果
+    // 原生
+   /*  var lis=document.querySelectorAll("#FixedRight ul li");
+    for(var li of lis){
+        li.onmouseenter=function(){
+            var li=this;
+            var em=li.lastElementChild.previousElementSibling;
+            var style=getComputedStyle(em);
+            console.log(style )
+            // if(em.style.opacity==0){
+                em.style.opacity=1;
+            // }else{
+            //     em.style.opacity=0;
+            // }        
+        }
+        li.onmouseleave=function(){
+            var li=this;
+            var em=li.lastElementChild.previousElementSibling;
+            var style=getComputedStyle(em);
+            em.style.opacity=0;
+        }
+    }*/
+    </script>
+</body>
+</html>
