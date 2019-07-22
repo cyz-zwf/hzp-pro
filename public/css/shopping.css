@@ -101,7 +101,7 @@ div.shp_list div.shp_title div.shp_sp div.chb input{
     margin:70px 15px 0px;
 }
 div.shp_list div.shp_title div.shp_sp div.img{
-    margin:38px 40px 0px 10px;
+    margin:30px 40px 0px 10px;
 }
 div.shp_list div.shp_title div.shp_sp div.img a img {
     width:74px;
@@ -133,20 +133,26 @@ div.shp_list div.shp_title div.shp_sp div.counts{
     height:28px;
 }
 div.shp_list div.shp_title div.shp_sp div.counts div.btn1{
-    padding:2px 5px;
+    padding:4px 7px;
     float:left;
     border-right:1px solid #aaa;
+    cursor:pointer;
 }
 div.shp_list div.shp_title div.shp_sp div.counts div.num{
-    padding-left:31px;
-    padding-top:4px;
+    padding-left:30px;
+    padding-top:5px;
+    width:30;
+    
+    
 }
 div.shp_list div.shp_title div.shp_sp div.counts div.btn2{
-    margin-top:-24px;
+    margin-top:-26px;
     margin-left:58px;
     float:left;
-    padding:5px 4px;
+    padding:4px 5px;
     border-left:1px solid #aaa;
+    cursor:pointer;
+    
 
 }
 /* 小计 */
