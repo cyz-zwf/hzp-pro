@@ -81,7 +81,7 @@ div.shp_list div.shp_title ul li{
     margin-right:90px;
     height:47px;
     line-height: 47px;
-    margin-left:15px;
+    margin-left:19px;
     font-size: 12px;
 } 
 div.shp_list div.shp_title ul :nth-child(2){
@@ -95,5 +95,62 @@ div.shp_list div.shp_title ::after{
 /* 购物车商品1 */
 div.shp_list div.shp_title div.shp_sp{
     width:1190px;
-    height:150px;
+    height:160px;
+}
+div.shp_list div.shp_title div.shp_sp div.chb input{
+    margin:70px 15px 0px;
+}
+div.shp_list div.shp_title div.shp_sp div.img{
+    margin:38px 40px 0px 10px;
+}
+div.shp_list div.shp_title div.shp_sp div.img a img {
+    width:74px;
+    height:74px;
+}
+/* 商品信息 */
+div.shp_list div.shp_title div.shp_sp div.sp_msg{
+    margin-top:34px;
+    font-size:12px;
+}
+div.shp_list div.shp_title div.shp_sp div.sp_msg div.detail{
+    margin-top:5px;
+    margin-left:-1px;
+}
+div.shp_list div.shp_title div.shp_sp div.sp_msg div.gug{
+    margin-top:5px;
+    color:#666;
+}
+/* 单价 */
+div.shp_list div.shp_title div.shp_sp div.price{
+    margin-top:40px;
+    margin-left:259px;
+}
+/* 数量 */
+div.shp_list div.shp_title div.shp_sp div.counts{
+    margin-top:35px;
+    margin-left:148px;
+    border:1px solid #aaa;
+    height:28px;
+}
+div.shp_list div.shp_title div.shp_sp div.counts div.btn1{
+    padding:2px 5px;
+    float:left;
+    border-right:1px solid #aaa;
+}
+div.shp_list div.shp_title div.shp_sp div.counts div.num{
+    padding-left:31px;
+    padding-top:4px;
+}
+div.shp_list div.shp_title div.shp_sp div.counts div.btn2{
+    margin-top:-24px;
+    margin-left:58px;
+    float:left;
+    padding:5px 4px;
+    border-left:1px solid #aaa;
+
+}
+/* 小计 */
+div.shp_list div.shp_title div.shp_sp div.sum{
+    margin-top:42px;
+    margin-left:80px;
 }
