@@ -98,7 +98,7 @@ div.shp_list div.shp_title div.shp_sp{
     height:160px;
 }
 div.shp_list div.shp_title div.shp_sp div.chb input{
-    margin:70px 15px 0px;
+    margin:70px 20px 0px;
 }
 div.shp_list div.shp_title div.shp_sp div.img{
     margin:30px 40px 0px 10px;
@@ -123,12 +123,12 @@ div.shp_list div.shp_title div.shp_sp div.sp_msg div.gug{
 /* 单价 */
 div.shp_list div.shp_title div.shp_sp div.price{
     margin-top:40px;
-    margin-left:259px;
+    margin-left:295px;
 }
 /* 数量 */
 div.shp_list div.shp_title div.shp_sp div.counts{
     margin-top:35px;
-    margin-left:148px;
+    margin-left:90px;
     border:1px solid #aaa;
     height:28px;
 }
@@ -159,4 +159,49 @@ div.shp_list div.shp_title div.shp_sp div.counts div.btn2{
 div.shp_list div.shp_title div.shp_sp div.sum{
     margin-top:42px;
     margin-left:80px;
+}
+/* 操作 */
+div.shp_list div.shp_title div.shp_sp div.oper span{
+    width:22px;
+    height:22px;
+    float:left;
+    background:url(../img/shp/checkout_icon.png);
+    margin-top:39px;
+    margin-left:119px;
+}
+/* 优惠卷 */
+.coupon{
+    width:1190px;
+    margin:0 auto;
+    margin-top:20px;  
+}
+div.coupon div.coupon_title::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.coupon div.coupon_title span{
+    font-size:12px;
+}
+div.coupon div.coupon_title span.gay{
+    color:#9f9f9f;
+    font-weight: 100;
+}
+div.coupon div.coupon_title span.red{
+    color:#ef1d1e;
+}
+div.coupon div.coupon_title div.coupon_r{
+    background-color:#000;
+    color:#fff;
+    font-size:12px;
+    width: 88px;
+    margin-right: 18px;
+    padding: 1px;
+    text-align: center;
+}
+div.coupon div.jun{
+    widows: 1190px;
+    height:176px;
+    background-color:#fff;
+    margin-top:20px;  
 }
