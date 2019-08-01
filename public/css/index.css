@@ -8,19 +8,88 @@ body{
     background-color:#f7ceb5;
     position: relative;
     z-index: 0;
+   
 }
 /* 背景图 */
 .lb{
     width:1190px;
     margin:0 auto;
     height:400px;
-    background:url(../img/index/hp_longwearing_20190627.gif);
+    position :relative;
+    /* background:url(../img/index/hp_longwearing_20190627.gif); */
 }
+.overflow{
+    width:1190px;
+    margin:0 auto;
+    overflow:hidden;
+}
+/* 轮播图 */
+.lb-box div.banner ul.ul-imgs{
+    width:4760px ;
+    margin-left:0px;   
+}
+.lb-box div.banner ul.ul-imgs.transition,.lb-box div.banner ul.ul_idx.transition{
+    transition:all .5s linear;   
+}
+.lb-box div.banner ul.ul-imgs li{
+    width:1190px;
+    float:left;
+
+}
+/* 小圆点设置 */
+.lb-box div.banner ul.ul_idx{
+    position: absolute;
+    bottom:25px;
+    left:50%;
+    margin-left:100px; 
+}
+.lb-box div.banner ul.ul_idx>li{
+    float:left;
+    width:10px;
+    height:10px;
+    background-color:#fff;
+    border-radius:50%;
+    cursor:pointer;
+    margin:0 5px;
+}
+.lb-box div.banner ul.ul_idx li.active{
+    background-color:rgb(27, 8, 199);
+}
+/* 左按钮 */
+.lb-box div.banner div.btn_left{
+    position: absolute;
+    height:52px;
+    width:34px;
+    left:250px;
+    top:174px;
+    background:url("../img/index/ic_index_normal.png") no-repeat;
+    background-position:-81px -152px;
+}
+/* 右按钮 */
+.lb-box div.banner div.btn_right{
+    position: absolute;
+    height:52px;
+    width:34px;
+    right:20px;
+    top:174px;
+    background:url("../img/index/ic_index_normal.png") no-repeat;
+    background-position:-115px -152px;
+}
+.lb-box div.banner div.btn_right:hover{
+    background-position:-195px -152px;
+    cursor:pointer;
+}
+.lb-box div.banner div.btn_left:hover{
+    background-position:-159px -152px;
+    cursor:pointer;
+}
+
 /* 导航box */
 div.lb div.nav{
     position: absolute;
     background-color:#fff;
     z-index:3;
+    top: 0;
 }
 /* 导航下的列表 */
 div.lb div.nav ul li{
