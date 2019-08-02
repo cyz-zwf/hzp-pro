@@ -33,19 +33,23 @@ function moto(to){
     ulimage.style.marginLeft=-i*liwidth+"px";
     //先删除所有小圆点的class
     for(var li of lis){
-        li.style.transition="";
+        li.className="";
+       
     }
+    //console.log(i);
     //当transition动画播放完之后，才
     if(i==licount){
         i=0;
         setTimeout(function(){
             ulimage.style.transition="";//清掉transition属性
+
             ulimage.style.marginLeft=0;//将ulImgs拉回0位置
         },duration)
     }
     // console.log(i);
     //再给当前位置的小圆点添加class active
-    lis[i].style.active="active";
+    lis[i].className="active";
+    lis[i].style.transition="transition";
 }
 //左右按钮
 var btnLeft=document.getElementsByClassName("btn_left")[0];
@@ -58,6 +62,7 @@ btnRight.onclick=function(){
 //两个按钮共用的移动函数，n传入1时，移动到i+1位置，左移。n传入-1时，移动到i-1位置，右移
 function move(n){
     if(open){//只有可以单击时
+        //console.log(i+n);
         moto(i+n);//才调用真正移动ul的方法
         open=false;//马上把开关关上，禁止再次点击
         //只有本地transition动画播放完，才能自动打开开关，点击按钮才有反应。
@@ -85,10 +90,12 @@ banner.onmouseout=function(){
 }
 //小圆点
 var ulIdx=document.getElementsByClassName("ul_idx")[0];
+//console.log(ulIdx);
 var open=true;
 ulIdx.onclick=function(e){
     if(open){
         var li=e.target;
+        console.log(li.nodeName)
         if(li.nodeName=="LI"){
             if( li.style.active!=="active"){
                 for(var i=0; i<lis.length;i++){
