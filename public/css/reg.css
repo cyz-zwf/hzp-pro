@@ -33,12 +33,14 @@
     font-size:16px;
     font-weight: bold;
 }
+/* 已有账号登录 */
 .reg_title span{
     position: absolute;
     top:30px;
     right:31px;
     font-size:14px;
     color:#f00;
+    cursor:pointer;
 }
 .reg_mb li{
     margin-bottom:20px;
@@ -63,6 +65,7 @@
 input,.reg_mb li.btn{
     width:200px;
     height:30px;
+    cursor:pointer;
 }
 .reg_mb li.cheb :first-child{
     width:15px;
@@ -85,6 +88,7 @@ input,.reg_mb li.btn{
     bottom: 45px;
     left: 187px;
     color:#000;
+    cursor:pointer;
 }
 
 .voli{
