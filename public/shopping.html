@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,106 +9,145 @@
     <link rel="stylesheet" href="css/comm.css">
     <link rel="stylesheet" href="css/shopping.css">
 </head>
+
 <body>
     <div id="top"></div>
     <!-- 购物 -->
     <div id="shp_box">
         <div id="shp">
             <div class="lo">C y z & Z h u</div>
-             <!-- 购物车流程 -->
+            <!-- 购物车流程 -->
             <div class="shp_lc">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-        </div>    
+        </div>
     </div>
     <!-- 购物筐-->
-<div class="shpbox_bg">
-    <!-- 消息提示 -->
+    <div class="shpbox_bg">
+        <!-- 消息提示 -->
         <div class="mag">
             <div>您的购物车清单如含近效期产品，该近效期产品不支持7天无理由退货，近效期产品为页面有特别标示有效期信息的产品。</div>
         </div>
-    <!-- 购物清单 -->
-    <div class="shp_list">
-        <div class="shp_title">
+        <!-- 购物清单 -->
+        <div class="shp_list">
+            <div class="shp_title">
+                <ul>
+                    <li><input type="checkbox"> 全选</li>
+                    <li>商品信息</li>
+                    <li>单价(元)</li>
+                    <li>数量</li>
+                    <li>小计(元)</li>
+                    <li>操作</li>
+                </ul>
+                <!-- 购物车商品1 -->
+                <div class="shp_sp">
+                    <div class="lt chb"><input type="checkbox"></div>
+                    <div class="tp lt img"><a href=""><img src="img/shp/1_n_07468_150x150.jpg" alt=""></a></div>
+                    <!-- 商品信息 -->
+                    <div class="sp_msg lt ">
+                        <h5>LANCOME</h5>
+                        <div class="detail">兰蔻菁纯臻颜滋润眼霜奢宠礼盒</div>
+                        <div class="gug">规格 : 套装</div>
+                    </div>
+                    <!-- 单价 -->
+                    <div class="lt price">1088</div>
+                    <!-- 数量 -->
+                    <div class="lt counts">
+                        <div class="btn1">-</div>
+                        <div class="num">1</div>
+                        <div class="btn2">+</div>
+                    </div>
+                    <!-- 小计 -->
+                    <div class="lt sum">1088</div>
+                    <!-- 操作 -->
+                    <div class="lt oper ">
+                        <span></span>
+                    </div>
+                </div>
+                <!-- 购物车商品2 -->
+                <div class="shp_sp">
+                    <div class="lt chb"><input type="checkbox"></div>
+                    <div class="tp lt img"><a href=""><img src="img/shp/1_n_07468_150x150.jpg" alt=""></a></div>
+                    <!-- 商品信息 -->
+                    <div class="sp_msg lt ">
+                        <h5>LANCOME</h5>
+                        <div class="detail">兰蔻菁纯臻颜滋润眼霜奢宠礼盒</div>
+                        <div class="gug">规格 : 套装</div>
+                    </div>
+                    <!-- 单价 -->
+                    <div class="lt price">1088</div>
+                    <!-- 数量 -->
+                    <div class="lt counts">
+                        <div class="btn1">-</div>
+                        <div class="num">1</div>
+                        <div class="btn2">+</div>
+                    </div>
+                    <!-- 小计 -->
+                    <div class="lt sum">1088</div>
+                    <!-- 操作 -->
+                    <div class="lt oper ">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 优惠卷 -->
+        <div class="coupon">
+            <div class="coupon_title">
+                <div class="lt">
+                    <h3>优惠卷 <span class="gay">*了解优惠券</span> <span class="red">使用规则</span></h3>
+                </div>
+                <div class="coupon_r rt">+输入优惠码</div>
+            </div>
+            <div class="jun">
+                <div class="none">
+                    <div class="text">您目前没有优惠券</div>
+                </div>
+            </div>
+        </div>
+        <!-- 结算 -->
+        <div class="total">
+            <div class="total_lt">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked>
+                    </li>
+                    <li>全选</li>
+                    <li>批量删除</li>
+                    <li>|</li>
+                    <li>
+                        <div class="call">联系客服
+                            <div class="pho"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="total_rt">
+                <div class="rt_lt">
+                    <div>已选 <span>3</span> 件商品, &nbsp;&nbsp;合计 :  <span>¥2208.00</span>
+                    </div>
+                    <div >商品总额 : <span>¥2208.00</span> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class="icon"></span> 共节省:<span> ¥0.00</span></div>
+                </div>
+                <div class="btn_red">立即结算</div>
+            </div>
+        </div>
+        <!-- 猜你喜欢 -->
+        <div id="like_title">
+            <h3>猜你喜欢</h3>
+            <div id="btn_rt"></div>
+            <div class="btn_lt"></div>
+        </div>
+        <div id="shp_transition">
             <ul>
-                <li><input type="checkbox"> 全选</li>
-                <li>商品信息</li>
-                <li>单价(元)</li>
-                <li>数量</li>
-                <li>小计(元)</li>
-                <li>操作</li>
+                <li></li>
             </ul>
-            <!-- 购物车商品1 -->
-            <div class="shp_sp">
-                <div class="lt chb"><input type="checkbox"></div>
-                <div class="tp lt img"><a href=""><img src="img/shp/1_n_07468_150x150.jpg" alt=""></a></div>
-                <!-- 商品信息 -->
-                <div class="sp_msg lt ">
-                    <h5>LANCOME</h5>
-                    <div class="detail">兰蔻菁纯臻颜滋润眼霜奢宠礼盒</div>
-                    <div class="gug">规格 : 套装</div>
-                </div>
-                <!-- 单价 -->
-                <div class="lt price">1088</div>
-                <!-- 数量 -->
-                <div class="lt counts">
-                    <div class="btn1">-</div>
-                    <div class="num">1</div>
-                    <div class="btn2">+</div>
-                </div>
-                <!-- 小计 -->
-                <div class="lt sum">1088</div>
-                <!-- 操作 -->
-                <div class="lt oper ">
-                    <span></span>
-                </div>
-            </div>
-            <!-- 购物车商品2 -->
-            <div class="shp_sp">
-                <div class="lt chb"><input type="checkbox"></div>
-                <div class="tp lt img"><a href=""><img src="img/shp/1_n_07468_150x150.jpg" alt=""></a></div>
-                <!-- 商品信息 -->
-                <div class="sp_msg lt ">
-                    <h5>LANCOME</h5>
-                    <div class="detail">兰蔻菁纯臻颜滋润眼霜奢宠礼盒</div>
-                    <div class="gug">规格 : 套装</div>
-                </div>
-                <!-- 单价 -->
-                <div class="lt price">1088</div>
-                <!-- 数量 -->
-                <div class="lt counts">
-                    <div class="btn1">-</div>
-                    <div class="num">1</div>
-                    <div class="btn2">+</div>
-                </div>
-                <!-- 小计 -->
-                <div class="lt sum">1088</div>
-                <!-- 操作 -->
-                <div class="lt oper ">
-                    <span></span>
-                </div>
-            </div>
         </div>
     </div>
-    <!-- 优惠卷 -->
-    <div class="coupon">
-        <div class="coupon_title">
-            <div class="lt">
-                <h3>优惠卷 <span class="gay">*了解优惠券</span> <span class="red">使用规则</span></h3>
-            </div>
-            <div class="coupon_r rt">+输入优惠码</div>
-        </div>
-        <div class="jun">
-                <div class="none"></div>
-            </div>
-    </div>
-    <!-- 结算 -->
-    <!-- 猜你喜欢 -->
-</div>
     <div id="footer"></div>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/req.js"></script>
 </body>
+
 </html>

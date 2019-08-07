@@ -173,7 +173,7 @@ div.shp_list div.shp_title div.shp_sp div.oper span{
 .coupon{
     width:1190px;
     margin:0 auto;
-    margin-top:20px;  
+    margin-top:30px;  
 }
 div.coupon div.coupon_title::after{
     content:"";
@@ -200,8 +200,159 @@ div.coupon div.coupon_title div.coupon_r{
     text-align: center;
 }
 div.coupon div.jun{
-    widows: 1190px;
+    width: 1190px;
     height:176px;
     background-color:#fff;
-    margin-top:20px;  
+    margin-top:2px;  
+    position: relative;
+   
+}
+div.coupon div.jun div.none{
+    width:49px;
+    height:32px;
+    background:url("../img/shp/sprite_checkout_coupons.png") no-repeat;
+    background-position:-19px 0;
+    position: absolute;
+    top:60px;
+    left:570.5px;
+}
+div.none div.text{
+    width:150px;
+    position: absolute;
+    top: 36px;
+    left: -43px;
+    color:#a7a7a7;
+}
+/* 结算 */
+.total{
+    width:1190px;
+    height:60px;
+    background-color:#fff;
+    margin:0 auto;
+    margin-top:30px;
+}
+.total::after{
+    content: "";
+    display:block;
+    clear:both;
+}
+/* 结算左侧 */
+.total div.total_lt{
+    float:left;
+    line-height:60px;
+}
+.total div.total_lt ul li{
+    float:left;
+    margin-left:30px;
+    font-size:12px;
+    position:relative;
+    cursor:pointer;
+}
+.total div.total_lt ul li::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+div.total_lt ul li div.call{
+    width:120px;
+    height:20px;
+    line-height:20px;
+    border-radius:10px;
+    background-color:#eee;
+    position: absolute;
+    top:19px;
+    padding-left:10px;
+}
+div.total_lt ul li div.call div.pho{
+    width:11px;
+    height:11px;
+    background:url("../img/shp/checkout-submit-phone.png") no-repeat;
+    position :absolute;
+    top: 5px;
+    left: 100px;
+}
+/* 结算右侧 */
+.total div.total_rt{
+    float:right;
+    margin-right:183px;
+    position: relative;
+}
+.total div.total_rt::after{
+    content:"";
+    display:block ;
+    clear:both;
+}
+.total div.total_rt div.rt_lt{
+    margin-top: 13px;
+    font-size: 12px;
+    color:#858585;
+}
+.total div.total_rt div.rt_lt span{
+    font-size:14px;
+    color:#000;
+}
+
+/* 立即结算 */
+.total div.total_rt div.btn_red{
+    width: 140px;
+    height:60px;
+    position:absolute;
+    top: 0;
+    right: -183px;
+    background-color:#ef1d1e;
+    color:#fff;
+    text-align:center;
+    line-height:60px;
+    cursor:pointer;
+}
+.rt_lt :first-child{
+    margin-bottom:5px;
+}
+span.icon{
+    display:block;
+    position: absolute;
+    top:36px;
+    left:118px;
+    width:16px;
+    height:16px;
+    margin:0 10px;
+    background:url("../img/shp/checkout_first_minu.png") no-repeat;
+}
+
+/* 猜你喜欢 */
+#like_title{
+    width:1190px;
+    margin:0 auto;
+    margin-top:30px;
+    font-weight: bold;
+  
+}
+
+#like_title div{
+    border:1px solid #000;
+    width:  50px;
+    height:30px;
+    float:right;
+    margin-top:-27px;
+}
+#like_title div::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#like_title div#btn_lt{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#like_title :nth-child(2){
+    border-left:0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#shp_transition{
+    width:1190px;
+    height:308px;
+    background-color:#fff;
+    margin:0 auto;
+    margin-top:3px;
 }
