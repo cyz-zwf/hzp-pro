@@ -102,25 +102,3 @@ input,.reg_mb li.btn{
     font-size:14px;
     color:#fff;
 }
-/*底部*/
-.reg_box div.bottom-b{
-    background:#000;
-    width:100%;
-    height:5rem;
-}
-.reg_box div.bottom-b-m{
-    width:1190px;
-    margin:0 auto;
-    text-align:center;
-}
-.reg_box div.bottom-b-m ul li.p-t{
-    padding-top: 1.5rem;
-}
-.reg_box div.bottom-b-m ul li a ,.bottom-b-m ul li span{
-    color:#a59d9d;
-    font-size:12px;
-    margin-right:8px;
-}
-.reg_box div.bottom-b-m ul li img{
-    vertical-align: middle;
-}

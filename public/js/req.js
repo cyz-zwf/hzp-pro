@@ -1,4 +1,4 @@
-//请求header.html
+//请求top.html
 $(function () {
     $.ajax({
         url: "top.html",
@@ -28,6 +28,17 @@ $(function () {
         success: function (result) {
             $(result).replaceAll("#footer");
             $(`<link rel="stylesheet" href="css/footer.css">`).appendTo("head");
+        }
+    });
+})
+//请求bottom.html
+$(function(){
+    $.ajax({
+        url:"bottom.html",
+        type:"get",
+        success:function (result){
+            $(result).replaceAll("#bottom");
+            $(`<link rel="stylesheet" href="css/bottom.css">`).appendTo("head");
         }
     });
 })
