@@ -329,7 +329,7 @@ span.icon{
 }
 
 #like_title div{
-    border:1px solid #000;
+    /* border:1px solid #000; */
     width:  50px;
     height:30px;
     float:right;
@@ -340,19 +340,46 @@ span.icon{
     display:block;
     clear:both;
 }
-#like_title div#btn_lt{
+#like_title div.btn_lt{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    background:url("../img/shp/checkout_tab_slider_control.png") no-repeat;
+    background-position:0 0px;
+    margin-right:1px;
 }
 #like_title :nth-child(2){
     border-left:0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    background:url("../img/shp/checkout_tab_slider_control.png") no-repeat;
+    background-position:-50px -60px;
 }
 #shp_transition{
     width:1190px;
     height:308px;
     background-color:#fff;
     margin:0 auto;
-    margin-top:3px;
+    margin-top:10px;
+}
+#shp_transition ul li{
+    float:left;
+    width:238px;
+    height:308px;
+    padding: 20px;
+}
+#shp_transition ul li img{
+    width:180px;
+    height:180px;
+}
+#shp_transition ul li div.shp_b{
+    width:195px;
+    height:64px;
+    font-size:12px;
+}
+#shp_transition ul li div.shp_b div.font14{
+    font-size:14px;
+    padding:6px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
