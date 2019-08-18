@@ -74,7 +74,7 @@ div.box div.nav div.nav-t{
     width: 240px;
     height: 36px;
     line-height: 36px;
-    background:url("../img/header/classified.png");
+    background:url("http://127.0.0.1:5050/img/header/classified.png");
 }
 div.box div.nav div.nav-t a{
     margin-left:20px;

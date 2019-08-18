@@ -1,13 +1,390 @@
 <template>
-    <div>
-        <top></top>
+  <div>
+    <top></top>
+    <toph></toph>
+    <!-- 大轮播图+导航 -->
+    <div class="lb-box">
+        <div class="z-box">
+            <!-- 轮播图 -->
+            <div class="lb banner">
+                <div class="overflow">
+                    <!-- 左侧按钮 -->
+                    <div class="btn_left"></div>
+                    <ul class="ul-imgs" id="ulimage">
+                        <li><a href="javascript:;"><img :src="url+'img/index/hp_live_20190621.gif'" alt=""></a></li>
+                        <li><a href="javascript:;"><img :src="url+'img/index/hp_foundation_20190620.jpg'" alt=""></a></li>
+                        <li><a href="javascript:;"><img :src="url+'img/index/hp_longwearing_20190627.gif'" alt=""></a></li>
+                        <li><a href="javascript:;"><img :src="url+'img/index/hp_foundation_20190620.jpg'" alt=""></a></li>
+                    </ul>
+                    <!-- 小圆点 -->
+                    <ul class="ul_idx">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- 右侧按钮 -->
+                    <div class="btn_right"></div>
+                </div>
+               
+                <!-- 导航 -->
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a class="dis-b" href="#">功效</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">功效</div>
+                        </li>
+                        <li> 
+                            <a class="dis-b" href="#">护肤</a>
+                            <a href="#">卸妆洁面</a>
+                            <a href="#">美容仪器</a>
+                            <a href="#">保湿喷雾</a>
+                            <div class="show">护肤</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">彩妆</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">彩妆</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">香水</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">香水</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">男士护肤</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">男士护肤</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">洗浴护体</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">洗浴护体</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">美容护发</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">美容护发</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">工具</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">工具</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">口红</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">口红</div>
+                        </li>
+                        <li>
+                            <a class="dis-b" href="#">面膜</a>
+                            <a href="#">保湿补水</a>
+                            <a href="#">底妆修容</a>
+                            <div class="show">面膜</div>
+                        </li>  
+                    </ul>
+                <!-- 菜单栏 -->
+                
+                </div>
+            </div>
+
+        </div>
     </div>
+    <!-- 小图 -->
+    <div class="x-t">
+        <div class="auto-1">
+            <a href="#"><img :src="url+'img/index/hp_weeklyspecial_20190627.jpg'" alt=""></a>
+            <a class="ml" href="#"><img :src="url+'img/index/hp_miniheroguerlain_20190627.jpg'" alt=""></a>
+            <a class="ml" href="#"><img :src="url+'img/index/hp_miniheroshu_20190627.jpg'" alt=""></a>
+        </div>
+    </div>
+    <!-- 1f 标题 -->
+    <div class="title">
+        <h2 class="lt">全部品牌 <span>ALL BRANDS</span></h2>
+        <ul>
+            <li><a href="#">全部品牌</a></li>
+            <li><a href="#">独家品牌</a></li>
+            <li><a class="fb" href="#">热门品牌</a></li>
+        </ul>
+    </div>
+    <!-- 1f 小轮播图和各品牌商家 -->
+    <div class="f1-box">
+        <div class="dis-f">
+            <!-- 小图轮播 -->
+            <div class="x-lb">
+                <a href="#">
+                    <img :src="url+'img/index/hp_superbrand2_20190627.jpg'" alt="">
+                </a>
+            </div>
+            <!-- 品牌商家 -->
+            <div class="std">
+                <div class="std-1">
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/sephoracollection_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/esteelauder_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/lancaster_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/fresh_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/loewe_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/maisonmargiela_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/sk-ii_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/mariedalgarcolorstudio_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/peterthomasroth_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/refa_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/bobbibrown_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/maisonmargiela_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/dior_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/ernolaszlo_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/wei_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img :src="url+'img/index/guerlain_144X60.png'" alt=""></a>
+                            <div data-stds="sdts" class="sdts">
+                                <p>兰蔻</p>
+                                <div class="djck">点击查看</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 2f标题 -->
+    <div class="f2-title">
+        <div class="title">
+            <h2 class="lt">护肤品类 <span>SKINCARE</span></h2>
+            <ul>
+                <li><a href="#">全部</a></li>
+                <li><a href="#">面部精华</a></li>
+                <li><a href="#">美容仪</a></li>
+                <li><a href="#">面膜</a></li>
+                <li><a class="fb" href="#">惠选套装</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- f2图片展示区 -->
+    <div class="f2-box">
+        <div class="f2-2">
+            <!-- f2左边大图 -->
+            <a class="zsq-dt" href="#"><img :src="url+'img/index/hp_skinfloor_20190627.jpg'" alt=""></a>
+            <!-- f2右边小图展示 -->
+            <div class="zsq-1">
+                <ul>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img :src="url+'img/index/1_n_07449_180x180.jpg'" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <div><a class="fb" href="#">LANCOME</a></div>
+                        <div><a href="#">兰蔻眼部精华肌底液明眸亮...</a></div>
+                        <div><a href="#">￥680.00</a></div>
+                        <a class="zsq-xt" href="#"><img src="img/index/1_n_07449_180x180.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 图标品牌栏 -->
+    <div>
+        <div></div>
+    </div>
+    <!-- 页面滚动效果 -->
+    <div id="FixedTop">
+        <div class="FTop">
+            <div class="Ftop_logo">C y z & Z h u</div>
+            <div class="Ftop_box">
+                <div class="text"><input type="text"></div>
+                <div class="search">搜索</div>
+            </div>
+        </div>
+    </div>
+    <!-- 右边滑动效果 -->
+    <div id="FixedRight">
+        <!--    <ul>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">个人信息</em>
+                    <em class="script_1"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">购物车</em>
+                    <em class="script_2"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">联系客服</em>
+                    <em class="script_3"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">移动端</em>
+                    <em class="script_4"></em>
+                </li>
+                <li>
+                    <a href=""></a>
+                    <em class="xs">返回顶部</em>
+                    <em class="script_5"></em>
+                </li>
+            </ul>-->
+    </div>
+    <!-- 左边滑动效果 -->
+    <div id="FixedLeft">
+    </div>
+    <tail></tail>
+    <bottom></bottom>
+  </div>
 </template>
 <script>
+
 export default {
+//   @import url("../assets/js/index.js");  
+    data(){
+        return {
+            url:"http://127.0.0.1:5050/"
+        }
+    },
+    methods:{
+
+    },
     
-}
+};
 </script>
 <style  scoped>
-
+@import url("../assets/css/comm.css");
+@import url("../assets/css/index.css");
 </style>

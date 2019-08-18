@@ -1,9 +1,9 @@
 /*底部大盒子*/
-#footer div.bottom-box{
+div.bottom-box{
     width:100%;
 
 }
-#footer div.bottom{
+div.bottom{
     width:1190px;
     height:8.5rem;
     margin:0 auto;
@@ -12,77 +12,77 @@
     border-bottom:2px solid #000;
 
 }
-#footer div.bottom ul li{
+div.bottom ul li{
     float: left;
     margin:1.5rem 3rem;
     text-align:4px;
 }
 /*图标*/
-#footer div.bottom ul li p.jlt,#footer div.bottom ul li p.jlt-1{
+ div.bottom ul li p.jlt,#footer div.bottom ul li p.jlt-1{
     width:43px;
     height:49px;
-    background:url(../img/footer/footer_ico_sprite.png) no-repeat;
+    background:url(http://127.0.0.1:5050/img/footer/footer_ico_sprite.png) no-repeat;
     background-position:-136px 2px;
 }
-#footer div.bottom ul li p.jlt-2{
+ div.bottom ul li p.jlt-2{
     background-position:-87px 1px;
 }
-#footer div.bottom ul li p.jlt-3{
+ div.bottom ul li p.jlt-3{
     background-position:8px 1px;
 }
-#footer div.bottom ul li p.jlt-4{
+ div.bottom ul li p.jlt-4{
     background-position:-45px 1px;
 }
-#footer div.bottom ul li p.jlt-5{
+div.bottom ul li p.jlt-5{
     background-position:-185px 1px;
 }
 /*li之间添加 |  */
-#footer div.bottom ul li:not(:last-child)::after{
+div.bottom ul li:not(:last-child)::after{
     display:block;
     margin-top:-55px;
     margin-left:125px;
     content:"|";
     color:#a59d9d;
 }
-#footer div.text-center{
+ div.text-center{
     margin:8px -20px;
 }
-#footer p.text-center{
+ p.text-center{
     margin:8px -10px;
 }
 /*g购物流程 中部*/
-#footer div.bottom-m{
+div.bottom-m{
     width:1190px;
     margin:0 auto;
     margin-top:20px;
     margin-bottom:2rem;
 }
 /*解决高度坍塌*/
-#footer div.bottom-m::after{
+ div.bottom-m::after{
     content:"";
     display:block;
     clear: both;
 }
 /*背景图*/
-#footer div.bottom-m ul li.bg-t{
+div.bottom-m ul li.bg-t{
     width:64px;
     height:154px;
-    background:url(../img/footer/footer_line.png);
+    background:url(http://127.0.0.1:5050/img/footer/footer_line.png);
     background-size:100% 100%;
     margin-right:0;
     margin-left:128px;
 }
-#footer div.bottom-m ul li{
+div.bottom-m ul li{
     float:left;
     margin-right:7.1rem;
 }
-#footer div.bottom-m ul li a{
+div.bottom-m ul li a{
     display:block;
     color:#a59d9d;
     font-size: 12px;
     margin-bottom:0.5rem;
 }
-#footer div.bottom-m ul li a.f-b{
+ div.bottom-m ul li a.f-b{
     font-weight:bold;
     color:#000;
     margin-bottom:1rem;

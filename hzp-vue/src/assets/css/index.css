@@ -62,7 +62,7 @@ body{
     width:34px;
     left:250px;
     top:174px;
-    background:url("../img/index/ic_index_normal.png") no-repeat;
+    background:url("http://127.0.0.1:5050/img/index/ic_index_normal.png") no-repeat;
     background-position:-81px -152px;
 }
 /* 右按钮 */
@@ -72,7 +72,7 @@ body{
     width:34px;
     right:20px;
     top:174px;
-    background:url("../img/index/ic_index_normal.png") no-repeat;
+    background:url("http://127.0.0.1:5050/img/index/ic_index_normal.png") no-repeat;
     background-position:-115px -152px;
 }
 .lb-box div.banner div.btn_right:hover{
