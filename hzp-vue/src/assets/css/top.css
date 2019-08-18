@@ -1,0 +1,63 @@
+a{
+    text-decoration:none;
+    color:#fff;
+}
+.bg{
+    background-color:#000;
+}
+/* 给顶部左边设置样式*/
+#header div.box{
+    height:109px;
+}
+ .top{
+    width:1190px;
+    height:2rem;
+    margin:0 auto; 
+}
+/*左右div浮动排一行*/
+.top div.lt,.top div.rt{
+    width:50%;
+}
+/*给顶部左边li加浮动*/
+.top div.lt li{
+    float:left;
+    line-height: 2rem;
+}
+/*给顶部左边的a修改样式*/
+.top div.lt a,.top div.rt a{
+    margin-right:3rem;
+}
+/*给top rt 右浮动*/
+.top div.rt li{
+    float:right;
+    line-height: 2rem;
+    right:2rem;
+}
+/*给右边的a外边距*/
+.top div.rt ul li a{
+    margin-right:3rem;
+    margin-left:2px;
+}
+/*给我的购物车设置右外边距*/
+.top div.rt ul li a.mr-0{
+    margin-right:0.3rem;
+}
+/*顶部鼠标划过的颜色由白色变成红色*/
+.top div.lt a:hover,.top div.rt a:hover{
+    color:red;
+}
+/*顶部右侧多有图标设置样式*/
+.img1{
+   margin-right:0px;
+   vertical-align: middle;
+}
+/*小三角*/
+.top div.rt ul li div.tubiao{
+    float:right;
+    margin-top:11.5%;
+    margin-right:1.5rem;
+    border:7px solid #fff;
+    border-bottom:7px solid #000;
+    border-right:7px solid #000;
+    border-left:7px solid #000;
+}

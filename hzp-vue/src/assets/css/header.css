@@ -1,0 +1,93 @@
+a{
+    text-decoration:none;
+    color:#fff;
+}
+.bg{
+    background-color:#000;
+}
+/*搜索部分*/
+/*logo*/
+#header div.search{
+    width:1190px;
+    height:4.5rem;
+    margin:0 auto;
+    margin-top:2rem;
+    box-sizing: border-box;
+}
+#header div.logo{
+    font-size:2.5rem;
+    font-weight: blod;
+    padding-right: 3rem;
+    text-shadow: 2px 2px #999;
+    font-style:italic;
+}
+#header div.logo span{
+    text-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/*左浮动*/
+#header div.search-text li{
+    float:left;
+}
+/*搜索框*/
+#header div.search-text input{
+    width:540px;
+    height:34px;
+    padding-left:20px;
+    position:relative;
+    
+}
+#header div.search-text button{
+    width:4rem;
+    height:34px;
+    background:#000;
+    border:0px;
+    position:absolute;
+    
+    
+}
+#header div.search-text li a{
+    font-size:12px;
+    color:#b9b5b5;
+    margin-right:2rem;
+}
+/*右侧购物袋*/
+#header div.search div.fl-rt{
+    height:42px;
+    margin-right:2.5rem;
+    margin-top:-2.5rem;
+    border:1px solid #e8e8e8;
+    padding:0.5rem 2rem;  
+}
+#header div.search>div.fl-rt img{
+    vertical-align: middle;
+}
+/*导航图片*/
+div.box div.nav{
+    width:100%;
+}
+div.box div.nav-v{
+    width:1190px;
+    margin:0 auto;
+}
+div.box div.nav div.nav-t{
+    float: left;
+    width: 240px;
+    height: 36px;
+    line-height: 36px;
+    background:url("../img/header/classified.png");
+}
+div.box div.nav div.nav-t a{
+    margin-left:20px;
+}
+/*导航*/
+div.box div.nav div.nav-m ul li{
+    float:left;
+    margin-left:3rem;
+    line-height:36px;
+}
+div.box div.nav div.nav-m ul li a{
+    color:#000;
+}
+div.box div.nav-r img{
+    margin-left:19rem;
+}

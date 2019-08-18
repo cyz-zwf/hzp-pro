@@ -1,0 +1,22 @@
+/*底部*/
+#footer div.bottom-b{
+    background:#000;
+    width:100%;
+    height:5rem;
+}
+#footer div.bottom-b-m{
+    width:1190px;
+    margin:0 auto;
+    text-align:center;
+}
+#footer div.bottom-b-m ul li.p-t{
+    padding-top: 1.5rem;
+}
+#footer div.bottom-b-m ul li a ,.bottom-b-m ul li span{
+    color:#a59d9d;
+    font-size:12px;
+    margin-right:8px;
+}
+#footer div.bottom-b-m ul li img{
+    vertical-align: middle;
+}
