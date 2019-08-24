@@ -6,6 +6,7 @@ import Detail from "./views/Detail"
 import Shopping from "./views/Shopping"
 import Login from "./views/Login"
 import Reg from "./views/Reg"
+import HomePage from "./views/HomePage"
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +20,7 @@ export default new Router({
     { path: '/Shopping', component: Shopping },
     { path: '/Login', component: Login },
     { path: '/Reg', component: Reg },
+    { path: '/HomePage', component: HomePage }
     // {
     //   path: '/about',
     //   name: 'about',
