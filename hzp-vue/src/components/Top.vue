@@ -7,10 +7,12 @@
             <a href="#">欢迎来到化妆品店</a>
           </li>
           <li>
-            <a href="login.html">请登录</a>
+            <router-link to="/Login">请登录</router-link>
+            <!-- <a href="login.html">请登录</a> -->
           </li>
           <li>
-            <a href="#">免费注册</a>
+            <router-link to="/Reg">免费注册</router-link>
+            <!-- <a href="#">免费注册</a> -->
           </li>
           <li>
             <a href="#">常见问题</a>
@@ -39,7 +41,8 @@
             <span class="img1">
               <img src="http://127.0.0.1:5050/img/header/my-sephora.png" alt />
             </span>
-            <a class="mr-0" href="#">我的购物车</a>
+            <router-link class="mr-0"  to="/Shopping">我的购物车</router-link>
+            <!-- <a class="mr-0" href="#">我的购物车</a> -->
             <div class="tubiao"></div>
           </li>
         </ul>
