@@ -475,37 +475,10 @@
       </div>
     </div>
     <!-- 右边滑动效果 -->
-    <div id="FixedRight">
-      <!--    <ul>
-                <li>
-                    <a href=""></a>
-                    <em class="xs">个人信息</em>
-                    <em class="script_1"></em>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <em class="xs">购物车</em>
-                    <em class="script_2"></em>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <em class="xs">联系客服</em>
-                    <em class="script_3"></em>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <em class="xs">移动端</em>
-                    <em class="script_4"></em>
-                </li>
-                <li>
-                    <a href=""></a>
-                    <em class="xs">返回顶部</em>
-                    <em class="script_5"></em>
-                </li>
-      </ul>-->
-    </div>
+    <fixed></fixed>
     <!-- 左边滑动效果 -->
     <div id="FixedLeft"></div>
+    <!-- 底部 -->
     <tail></tail>
     <bottom></bottom>
   </div>
@@ -520,6 +493,8 @@ export default {
   },
   methods: {},
   mounted() {
+
+    //  轮播图
     var i = 0; //现在正在显示第几张图片，从0开始
     var liwidth = 1190; //每个li的固定宽度
     var duration = 500; //每次轮播动画持续的时间
@@ -693,7 +668,7 @@ body {
   margin: 0 5px;
 }
 .lb-box div.banner ul.ul_idx li.active {
-  background-color: rgb(27, 8, 199);
+  background-color: rgb(68, 67, 66);
 }
 /* 左按钮 */
 .lb-box div.banner div.btn_left {

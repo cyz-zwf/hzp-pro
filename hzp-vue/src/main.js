@@ -8,6 +8,7 @@ import Top from "./components/Top"
 import Toph from "./components/Toph"
 import Tail from "./components/Tail"
 import Bottom from "./components/Bottom"
+import Fixed from "./components/Fixed"
 
 //保证所有vue都可以使用axios
 Vue.prototype.axios=axios
@@ -22,6 +23,7 @@ Vue.component("top",Top);
 Vue.component("toph",Toph);
 Vue.component("tail",Tail);
 Vue.component("bottom",Bottom);
+Vue.component("fixed",Fixed)
 
 
 Vue.config.productionTip = false 
