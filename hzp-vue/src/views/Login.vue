@@ -1,0 +1,68 @@
+<template>
+    <div class="login" id="login">
+        <div class="logo">C y z & Z h u</div>
+        <!-- 登录 -->
+        <div class="bodbg">
+            <div class="lo_box">
+                <div class="dl">登 录 c y z 官 网</div>
+                <div class="tex">
+                    <input type="text" placeholder="手机号/邮箱">
+                    <span class="suo1"></span>
+                </div>
+                <div>
+                    <input type="password" placeholder="密码">
+                    <span class="suo"></span>
+                </div>
+
+                <div class="pwd font_small">忘记密码?</div>
+                <button class="btn_dl">登 录</button>
+                <div class="chb">
+                    <input type="checkbox" checked>
+                    <p>已阅读</p>
+                    <p>《cyz用户服务协议》</p>
+                    <p>和</p>
+                    <p>《cyz隐私政策》</p>
+                </div>
+                <div class="image">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="zc">
+                    <p>还没有账号?<span>免费注册</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="bottom-b">
+            <div class="bottom-b-m">
+                <ul>
+                    <li class=p-t>
+                        <img src="img/footer/footer-redords-icon.png" alt="">
+                        <a href="#">沪公网安备 31010602003121号</a>
+                        <a href="#">ICP备案序号:沪ICP备05026645号</a>
+                        <a href="#">食品经营许可证</a>
+                        <a href="#">网站使用条款</a>
+                        <a href="#">严正声明</a>
+                    </li>
+                    <li>
+                        <span>本网站隶属于cyz（广州）化妆品销售有限公司</span>
+                        <a href="#">（企业法人营业执照）</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- 脚部 -->
+        <bottom></bottom>
+    </div>
+</template>
+<script>
+export default {
+    
+}
+</script>
+<style scoped>
+@import url("../assets/css/login.css");
+</style>>
+    

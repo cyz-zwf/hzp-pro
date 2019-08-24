@@ -385,6 +385,6 @@ export default {
 };
 </script>
 <style  scoped>
-@import url("../assets/css/comm.css");
+/* @import url("../assets/css/comm.css"); */
 @import url("../assets/css/index.css");
 </style>

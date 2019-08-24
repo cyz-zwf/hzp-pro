@@ -15,7 +15,7 @@
 .reg_box div.bg{
     width:100%;
     height:500px;
-    background:url("../img/login/hp_loginlage_20190718.jpg")
+    background:url("http://127.0.0.1:5050/img/login/hp_loginlage_20190718.jpg")
 }
 /* 注册 */
 .reg{
