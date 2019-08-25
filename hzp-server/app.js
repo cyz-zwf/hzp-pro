@@ -15,7 +15,7 @@ var pool= mysql.createPool({
 
 var app=express();
 app.use(cors({
-    origin :["http://127.0.0.1:8888","http://localhost:8888" ],
+    origin :["http://127.0.0.1:8888","http://localhost:8888" ,"http://hzpapi.chenyazhen.cn"],
     credentials:true
 }))
 

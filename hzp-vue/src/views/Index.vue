@@ -11,7 +11,15 @@
             <!-- 左侧按钮 -->
             <div class="btn_left"></div>
             <ul class="ul-imgs" id="ulimage">
-              <li>
+              <!-- banner start -->
+              <li v-for="(item,i) of banner" :key="i">
+                <a href="javascript:;">
+                  <img :src="item.banner_url" alt />
+                </a>
+              </li>
+              <!-- banner end -->
+
+              <!-- <li>
                 <a href="javascript:;">
                   <img :src="url+'img/index/hp_live_20190621.gif'" alt />
                 </a>
@@ -30,7 +38,7 @@
                 <a href="javascript:;">
                   <img :src="url+'img/index/hp_foundation_20190620.jpg'" alt />
                 </a>
-              </li>
+              </li>-->
             </ul>
             <!-- 小圆点 -->
             <ul class="ul_idx">
@@ -156,7 +164,21 @@
         <!-- 品牌商家 -->
         <div class="std">
           <div class="std-1">
+            <!-- 品牌start  -->
             <ul>
+              <li v-for="(item,i) of brand" :key="i">
+                <a href="javascript:;">
+                  <img :src="item.logo_s" alt />
+                </a>
+                <div data-stds="sdts" class="sdts">
+                  <p>{{item.brand_name}}</p>
+                  <div class="djck">点击查看</div>
+                </div>
+              </li>
+            </ul>
+            <!-- 品牌end -->
+
+            <!-- <ul>
               <li>
                 <a href="javascript:;">
                   <img :src="url+'img/index/sephoracollection_144X60.png'" alt />
@@ -301,7 +323,7 @@
                   <div class="djck">点击查看</div>
                 </div>
               </li>
-            </ul>
+            </ul>-->
           </div>
         </div>
       </div>
@@ -463,7 +485,7 @@
       <div></div>
     </div>
     <!-- 页面滚动效果 -->
-    <div id="FixedTop">
+    <!-- <div id="FixedTop">
       <div class="FTop">
         <div class="Ftop_logo">C y z & Z h u</div>
         <div class="Ftop_box">
@@ -473,11 +495,11 @@
           <div class="search">搜索</div>
         </div>
       </div>
-    </div>
+    </div>-->
     <!-- 右边滑动效果 -->
-    <fixed></fixed>
+    <!-- <fixed></fixed> -->
     <!-- 左边滑动效果 -->
-    <div id="FixedLeft"></div>
+    <!-- <div id="FixedLeft"></div> -->
     <!-- 底部 -->
     <tail></tail>
     <bottom></bottom>
@@ -488,11 +510,29 @@ export default {
   //   @import url("../assets/js/index.js");
   data() {
     return {
-      url: "http://127.0.0.1:5050/"
+      url: "http://127.0.0.1:5050/",
+      banner: [],
+      brand: []
     };
   },
   methods: {},
   mounted() {
+    // 轮播图请求
+    var banner_url = "/home/get_home_banner";
+    this.$post(banner_url, {}).then(res => {
+      console.log(res);
+      //处理轮播图第一张和最后一张一致
+      var temp_banner = res[0];
+      res.push(temp_banner);
+      this.banner = res;
+    });
+
+    // 品牌图请求
+    var brand_url = "/home/get_home_brand";
+    this.$post(brand_url, { limit: 16 }).then(res => {
+      console.log(res);
+      this.brand = res;
+    });
 
     //  轮播图
     var i = 0; //现在正在显示第几张图片，从0开始
@@ -594,7 +634,7 @@ export default {
     ulIdx.onclick = function(e) {
       if (open) {
         var li = e.target;
-        console.log(li.nodeName);
+        //console.log(li.nodeName);
         if (li.nodeName == "LI") {
           if (li.style.active !== "active") {
             for (var i = 0; i < lis.length; i++) {
@@ -817,6 +857,10 @@ h2 span {
   height: 78px;
   background-color: rgba(0, 0, 0, 0.8);
   float: left;
+}
+.std-1 ul li img{
+  width:144px;
+  height:60px;
 }
 .std-1 ul li div.sdts {
   width: 147px;
