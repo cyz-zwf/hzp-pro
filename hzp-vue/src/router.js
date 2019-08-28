@@ -7,6 +7,9 @@ import Shopping from "./views/Shopping"
 import Login from "./views/Login"
 import Reg from "./views/Reg"
 import HomePage from "./views/HomePage"
+import Classification from './views/Classification'
+import Myhome from './views/Myhome'
+
 Vue.use(Router)
 
 export default new Router({
@@ -20,7 +23,9 @@ export default new Router({
     { path: '/Shopping', component: Shopping },
     { path: '/Login', component: Login },
     { path: '/Reg', component: Reg },
-    { path: '/HomePage', component: HomePage }
+    { path: '/HomePage', component: HomePage },
+    { path: '/classification',component: Classification},
+    { path: '/myhome',component:Myhome},
     // {
     //   path: '/about',
     //   name: 'about',
